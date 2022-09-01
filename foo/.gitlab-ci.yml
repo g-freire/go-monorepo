@@ -1,0 +1,8 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: golang:1.18-buster
+  script:
+    - go build -o foo main.go
